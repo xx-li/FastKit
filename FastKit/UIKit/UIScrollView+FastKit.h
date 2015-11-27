@@ -11,26 +11,6 @@
 @interface UIScrollView (FastKit)
 
 /**
- Scroll content to top with animation.
- */
-- (void)scrollToTop;
-
-/**
- Scroll content to bottom with animation.
- */
-- (void)scrollToBottom;
-
-/**
- Scroll content to left with animation.
- */
-- (void)scrollToLeft;
-
-/**
- Scroll content to right with animation.
- */
-- (void)scrollToRight;
-
-/**
  Scroll content to top.
  
  @param animated  Use animation.

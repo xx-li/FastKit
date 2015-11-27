@@ -10,21 +10,6 @@
 
 @implementation UIScrollView (FastKit)
 
-- (void)scrollToTop {
-    [self scrollToTopAnimated:YES];
-}
-
-- (void)scrollToBottom {
-    [self scrollToBottomAnimated:YES];
-}
-
-- (void)scrollToLeft {
-    [self scrollToLeftAnimated:YES];
-}
-
-- (void)scrollToRight {
-    [self scrollToRightAnimated:YES];
-}
 
 - (void)scrollToTopAnimated:(BOOL)animated {
     CGPoint off = self.contentOffset;

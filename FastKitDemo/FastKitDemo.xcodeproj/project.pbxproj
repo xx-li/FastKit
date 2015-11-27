@@ -17,6 +17,16 @@
 		C066EBAF1C05B423002390E6 /* UIScrollView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C066EBA91C05B423002390E6 /* UIScrollView+FastKit.m */; };
 		C066EBB01C05B423002390E6 /* UITextView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C066EBAB1C05B423002390E6 /* UITextView+FastKit.m */; };
 		C066EBB11C05B423002390E6 /* UIView+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C066EBAD1C05B423002390E6 /* UIView+FastKit.m */; };
+		C06C70FA1C07F40B007B7CAC /* NSString+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C70F91C07F40B007B7CAC /* NSString+FastKit.m */; };
+		C06C70FD1C07F41C007B7CAC /* NSDictionary+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C70FC1C07F41C007B7CAC /* NSDictionary+FastKit.m */; };
+		C06C71001C07F42E007B7CAC /* NSArray+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C70FF1C07F42E007B7CAC /* NSArray+FastKit.m */; };
+		C06C71031C07F442007B7CAC /* NSDate+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C71021C07F442007B7CAC /* NSDate+FastKit.m */; };
+		C06C71061C07F479007B7CAC /* UILabel+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C71051C07F479007B7CAC /* UILabel+FastKit.m */; };
+		C06C71091C07F489007B7CAC /* UIImage+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C71081C07F489007B7CAC /* UIImage+FastKit.m */; };
+		C06C710C1C07F499007B7CAC /* UIColor+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C710B1C07F499007B7CAC /* UIColor+FastKit.m */; };
+		C06C71101C081E54007B7CAC /* CGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C710E1C081E54007B7CAC /* CGUtilities.m */; };
+		C06C71401C0827F1007B7CAC /* UIButton+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C713F1C0827F1007B7CAC /* UIButton+FastKit.m */; };
+		C06C71431C082F2D007B7CAC /* UIDevice+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C71421C082F2D007B7CAC /* UIDevice+FastKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +48,28 @@
 		C066EBAB1C05B423002390E6 /* UITextView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FastKit.m"; sourceTree = "<group>"; };
 		C066EBAC1C05B423002390E6 /* UIView+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FastKit.h"; sourceTree = "<group>"; };
 		C066EBAD1C05B423002390E6 /* UIView+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FastKit.m"; sourceTree = "<group>"; };
+		C06C70F81C07F40B007B7CAC /* NSString+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FastKit.h"; sourceTree = "<group>"; };
+		C06C70F91C07F40B007B7CAC /* NSString+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FastKit.m"; sourceTree = "<group>"; };
+		C06C70FB1C07F41C007B7CAC /* NSDictionary+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FastKit.h"; sourceTree = "<group>"; };
+		C06C70FC1C07F41C007B7CAC /* NSDictionary+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FastKit.m"; sourceTree = "<group>"; };
+		C06C70FE1C07F42E007B7CAC /* NSArray+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FastKit.h"; sourceTree = "<group>"; };
+		C06C70FF1C07F42E007B7CAC /* NSArray+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FastKit.m"; sourceTree = "<group>"; };
+		C06C71011C07F442007B7CAC /* NSDate+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FastKit.h"; sourceTree = "<group>"; };
+		C06C71021C07F442007B7CAC /* NSDate+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FastKit.m"; sourceTree = "<group>"; };
+		C06C71041C07F479007B7CAC /* UILabel+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FastKit.h"; sourceTree = "<group>"; };
+		C06C71051C07F479007B7CAC /* UILabel+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FastKit.m"; sourceTree = "<group>"; };
+		C06C71071C07F489007B7CAC /* UIImage+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FastKit.h"; sourceTree = "<group>"; };
+		C06C71081C07F489007B7CAC /* UIImage+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FastKit.m"; sourceTree = "<group>"; };
+		C06C710A1C07F499007B7CAC /* UIColor+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FastKit.h"; sourceTree = "<group>"; };
+		C06C710B1C07F499007B7CAC /* UIColor+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FastKit.m"; sourceTree = "<group>"; };
+		C06C710D1C081E3A007B7CAC /* CGUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGUtilities.h; sourceTree = "<group>"; };
+		C06C710E1C081E54007B7CAC /* CGUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGUtilities.m; sourceTree = "<group>"; };
+		C06C71111C081F33007B7CAC /* FastKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
+		C06C713E1C0827F1007B7CAC /* UIButton+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FastKit.h"; sourceTree = "<group>"; };
+		C06C713F1C0827F1007B7CAC /* UIButton+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FastKit.m"; sourceTree = "<group>"; };
+		C06C71411C082F2D007B7CAC /* UIDevice+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FastKit.h"; sourceTree = "<group>"; };
+		C06C71421C082F2D007B7CAC /* UIDevice+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FastKit.m"; sourceTree = "<group>"; };
+		C06C714A1C0832D4007B7CAC /* FastKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastKitMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +130,8 @@
 				C066EBA31C05B423002390E6 /* Foundation */,
 				C066EBA41C05B423002390E6 /* Quartz */,
 				C066EBA71C05B423002390E6 /* UIKit */,
+				C06C71111C081F33007B7CAC /* FastKit.h */,
+				C06C714A1C0832D4007B7CAC /* FastKitMacro.h */,
 			);
 			name = FastKit;
 			path = ../../FastKit;
@@ -106,6 +140,14 @@
 		C066EBA31C05B423002390E6 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				C06C70F81C07F40B007B7CAC /* NSString+FastKit.h */,
+				C06C70F91C07F40B007B7CAC /* NSString+FastKit.m */,
+				C06C70FB1C07F41C007B7CAC /* NSDictionary+FastKit.h */,
+				C06C70FC1C07F41C007B7CAC /* NSDictionary+FastKit.m */,
+				C06C70FE1C07F42E007B7CAC /* NSArray+FastKit.h */,
+				C06C70FF1C07F42E007B7CAC /* NSArray+FastKit.m */,
+				C06C71011C07F442007B7CAC /* NSDate+FastKit.h */,
+				C06C71021C07F442007B7CAC /* NSDate+FastKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -115,6 +157,8 @@
 			children = (
 				C066EBA51C05B423002390E6 /* CALayer+FastKit.h */,
 				C066EBA61C05B423002390E6 /* CALayer+FastKit.m */,
+				C06C710D1C081E3A007B7CAC /* CGUtilities.h */,
+				C06C710E1C081E54007B7CAC /* CGUtilities.m */,
 			);
 			path = Quartz;
 			sourceTree = "<group>";
@@ -128,6 +172,16 @@
 				C066EBAB1C05B423002390E6 /* UITextView+FastKit.m */,
 				C066EBAC1C05B423002390E6 /* UIView+FastKit.h */,
 				C066EBAD1C05B423002390E6 /* UIView+FastKit.m */,
+				C06C71041C07F479007B7CAC /* UILabel+FastKit.h */,
+				C06C71051C07F479007B7CAC /* UILabel+FastKit.m */,
+				C06C71071C07F489007B7CAC /* UIImage+FastKit.h */,
+				C06C71081C07F489007B7CAC /* UIImage+FastKit.m */,
+				C06C710A1C07F499007B7CAC /* UIColor+FastKit.h */,
+				C06C710B1C07F499007B7CAC /* UIColor+FastKit.m */,
+				C06C713E1C0827F1007B7CAC /* UIButton+FastKit.h */,
+				C06C713F1C0827F1007B7CAC /* UIButton+FastKit.m */,
+				C06C71411C082F2D007B7CAC /* UIDevice+FastKit.h */,
+				C06C71421C082F2D007B7CAC /* UIDevice+FastKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -202,12 +256,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06C710C1C07F499007B7CAC /* UIColor+FastKit.m in Sources */,
 				C066EBB01C05B423002390E6 /* UITextView+FastKit.m in Sources */,
 				C066EB791C05948E002390E6 /* ViewController.m in Sources */,
 				C066EB761C05948E002390E6 /* AppDelegate.m in Sources */,
 				C066EBB11C05B423002390E6 /* UIView+FastKit.m in Sources */,
+				C06C71091C07F489007B7CAC /* UIImage+FastKit.m in Sources */,
 				C066EBAF1C05B423002390E6 /* UIScrollView+FastKit.m in Sources */,
+				C06C71031C07F442007B7CAC /* NSDate+FastKit.m in Sources */,
+				C06C71401C0827F1007B7CAC /* UIButton+FastKit.m in Sources */,
+				C06C70FD1C07F41C007B7CAC /* NSDictionary+FastKit.m in Sources */,
+				C06C71061C07F479007B7CAC /* UILabel+FastKit.m in Sources */,
+				C06C71001C07F42E007B7CAC /* NSArray+FastKit.m in Sources */,
 				C066EBAE1C05B423002390E6 /* CALayer+FastKit.m in Sources */,
+				C06C71101C081E54007B7CAC /* CGUtilities.m in Sources */,
+				C06C70FA1C07F40B007B7CAC /* NSString+FastKit.m in Sources */,
+				C06C71431C082F2D007B7CAC /* UIDevice+FastKit.m in Sources */,
 				C066EB731C05948E002390E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

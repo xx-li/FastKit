@@ -125,7 +125,7 @@
  */
 - (NSString *)stringWithFormat:(NSString *)format;
 
-- (NSString *)StringDescriptionForTimestemp:(NSDate *)date;
+- (NSString *)descriptionTimeBetweenNow;
 
 /**
  Returns a date parsed from given string interpreted using the format.

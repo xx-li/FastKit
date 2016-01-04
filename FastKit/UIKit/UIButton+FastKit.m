@@ -98,11 +98,10 @@
                                                     mode:NSLineBreakByWordWrapping];
     CGFloat imageViewX = (CGRectGetWidth(self.frame) - labelSize.width - imageWidth - self.subMargin) / 2.0;
     CGFloat imageViewY = (CGRectGetHeight(self.frame) - imageHeight) / 2.0;
-    
+    self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
+
     CGFloat labelX = CGRectGetMaxX(self.imageView.frame) + self.subMargin;
     CGFloat labelY = (CGRectGetHeight(self.frame) - labelSize.height) / 2.0;
-    
-    self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
     self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
 }
 
@@ -120,11 +119,10 @@
 
     CGFloat labelX = (CGRectGetWidth(self.frame) - labelSize.width - imageWidth - self.subMargin) / 2.0;
     CGFloat labelY = (CGRectGetHeight(self.frame) - labelSize.height) / 2.0;
-    
+    self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
+
     CGFloat imageViewX = CGRectGetMaxX(self.titleLabel.frame) + self.subMargin;
     CGFloat imageViewY = (CGRectGetHeight(self.frame) - imageHeight) / 2.0;
-    
-    self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
     self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
     
 }
@@ -139,11 +137,10 @@
 
     CGFloat imageViewX = (CGRectGetWidth(self.frame) - imageWidth) / 2.0;
     CGFloat imageViewY = (CGRectGetHeight(self.frame) - labelSize.height - imageHeight - self.subMargin) / 2.0;
-    
+    self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
+
     CGFloat labelX = (CGRectGetWidth(self.frame) - labelSize.width) / 2.0;
     CGFloat labelY = CGRectGetMaxY(self.imageView.frame) + self.subMargin;
-    
-    self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
     self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
 }
 
@@ -157,11 +154,10 @@
 
     CGFloat labelX = (CGRectGetWidth(self.frame) - labelSize.width) / 2.0;
     CGFloat labelY =  (CGRectGetHeight(self.frame) - labelSize.height - imageHeight - self.subMargin) / 2.0;
-    
+    self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
+
     CGFloat imageViewX = (CGRectGetWidth(self.frame) - imageWidth) / 2.0;
     CGFloat imageViewY = CGRectGetMaxY(self.titleLabel.frame) + self.subMargin;
-    
-    self.titleLabel.frame = CGRectMake(labelX, labelY, labelSize.width, labelSize.height);
     self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
 }
 

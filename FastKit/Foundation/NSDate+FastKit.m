@@ -151,39 +151,52 @@
     return [formatter stringFromDate:self];
 }
 
-- (NSString *)StringDescriptionForTimestemp:(NSDate *)date {
-    NSDate *nowDate = self;
-    NSTimeInterval now = [nowDate timeIntervalSince1970];
-    NSTimeInterval last = [date timeIntervalSince1970];
-    double timezoneFix = [NSTimeZone localTimeZone].secondsFromGMT;
-    NSDateFormatter * timeFormater = [[NSDateFormatter alloc] init];
-    //同一天
-    if ((int)((now + timezoneFix)/(24*3600)) - (int)((last + timezoneFix)/(24*3600)) == 0)
-    {
-        [timeFormater setDateFormat:@"HH:mm"];
-        return [timeFormater stringFromDate:date];
+- (NSString *)descriptionTimeBetweenNow
+{
+    NSDate *now = [NSDate date];
+    NSInteger days = now.day - self.day ;
+    
+    if (days < 0) {
+        return [self stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
     }
-    //昨天
-    else if((int)((now - (24*3600) + timezoneFix)/(24*3600)) - (int)((last + timezoneFix)/(24*3600)) == 0)
-    {
-        [timeFormater setDateFormat:@"HH:mm"];
-        return [NSString stringWithFormat:@"昨天 %@", [timeFormater stringFromDate:date]];
+    
+    NSString *des;
+    
+    if (days > 365) {
+        des = [NSString stringWithFormat:@"%@年前", @(days/365)];
     }
-    //同一年
-    else if((int)((now + timezoneFix)/(365*24*3600)) - (int)((last + timezoneFix)/(365*24*3600)) == 0)
-    {
-        [timeFormater setDateFormat:@"MM-dd HH:mm"];
-        return [timeFormater stringFromDate:date];
+    else if (days > 30) {
+        des = [NSString stringWithFormat:@"%@个月前", @(days/30)];
     }
-    //非同一年
-    else
-    {
-        [timeFormater setDateFormat:@"yyyy-MM-dd HH:mm"];
-        return [timeFormater stringFromDate:date];
+    else if (days > 7) {
+        des = @"一周前";
     }
-
+    else if (days > 2) {
+        des = [NSString stringWithFormat:@"%@天前", @(days)];
+    }
+    else if (days == 2){
+        des = @"前天";
+    }
+    else if (days == 1){
+        des = @"昨天";
+    }
+    else {
+        NSInteger duration = (NSInteger)[now timeIntervalSinceDate:self];
+        NSInteger secPerHour = 60 * 60;
+        
+        if (duration > secPerHour) {
+            des = [NSString stringWithFormat:@"%@小时前", @(duration/secPerHour)];
+        }
+        else if (duration > 120){
+            des = [NSString stringWithFormat:@"%@分钟前", @(duration/60)];
+        }
+        else {
+            des = @"刚刚";
+        }
+    }
+    
+    return des;
 }
-
 
 + (NSDate *)dateWithString:(NSString *)dateString format:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

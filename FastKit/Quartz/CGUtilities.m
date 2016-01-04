@@ -9,6 +9,7 @@
 #import "CGUtilities.h"
 
 
+
 CGFloat FScreenScale() {
     static CGFloat scale;
     static dispatch_once_t onceToken;
@@ -31,3 +32,6 @@ CGSize FScreenSize() {
     });
     return size;
 }
+
+
+

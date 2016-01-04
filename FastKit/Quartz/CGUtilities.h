@@ -28,7 +28,7 @@ static inline CGFloat RadiansToDegrees(CGFloat radians) {
 }
 
 
-/// Returns the center fo   r the rectangle.
+/// Returns the center for the rectangle.
 static inline CGPoint CGRectGetCenter(CGRect rect) {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
 }

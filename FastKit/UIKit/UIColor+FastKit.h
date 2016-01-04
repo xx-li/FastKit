@@ -80,6 +80,11 @@
                     alpha:(float)alpha;
 
 
+/**
+ *  Create a random color
+ *
+ *  @return Return the UIColor instance
+ */
 + (UIColor *)randomColor;
 
 @end

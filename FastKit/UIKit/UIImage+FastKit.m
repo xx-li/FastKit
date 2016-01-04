@@ -106,6 +106,61 @@
     return newImage ;
 }
 
+- (UIImage *)imageByScalingProportionallyToMaximumSize:(CGSize)targetSize
+{
+    if([UIDevice isRetinaHD])
+    {
+        CGSize retinaMaxtSize = CGSizeMake(targetSize.width * 3, targetSize.height * 3);
+        if(!CGSizeEqualToSize(targetSize, retinaMaxtSize)) targetSize = retinaMaxtSize;
+    }
+    else if([UIDevice isRetina])
+    {
+        CGSize retinaMaxtSize = CGSizeMake(targetSize.width * 2, targetSize.height * 2);
+        if(!CGSizeEqualToSize(targetSize, retinaMaxtSize)) targetSize = retinaMaxtSize;
+    }
+    
+    if((self.size.width > targetSize.width || targetSize.width == targetSize.height) && self.size.width > self.size.height)
+    {
+        float factor = (targetSize.width*100)/self.size.width;
+        float newWidth = (self.size.width*factor)/100;
+        float newHeight = (self.size.height*factor)/100;
+        
+        CGSize newSize = CGSizeMake(newWidth, newHeight);
+        UIGraphicsBeginImageContext(newSize);
+        [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    }
+    else if((self.size.height > targetSize.height || targetSize.width == targetSize.height) && self.size.width < self.size.height)
+    {
+        float factor = (targetSize.height*100)/self.size.height;
+        float newWidth = (self.size.width*factor)/100;
+        float newHeight = (self.size.height*factor)/100;
+        
+        CGSize newSize = CGSizeMake(newWidth, newHeight);
+        UIGraphicsBeginImageContext(newSize);
+        [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    }
+    else if((self.size.height > targetSize.height || self.size.width > targetSize.width ) && self.size.width == self.size.height)
+    {
+        float factor = (targetSize.height*100)/self.size.height;
+        float newDimension = (self.size.height*factor)/100;
+        
+        CGSize newSize = CGSizeMake(newDimension, newDimension);
+        UIGraphicsBeginImageContext(newSize);
+        [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    }
+    else
+    {
+        CGSize newSize = CGSizeMake(self.size.width, self.size.height);
+        UIGraphicsBeginImageContext(newSize);
+        [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    }
+    
+    UIImage *returnImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return returnImage;
+}
+
 
 
 - (UIImage *)imageByTintColor:(UIColor *)color {

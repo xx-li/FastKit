@@ -48,6 +48,15 @@
  */
 - (UIImage *)imageByScalingProportionallyToSize:(CGSize)targetSize;
 
+/**
+ *  Scale the image to the maxinum given size
+ *
+ *  @param maxSize The site to scale to
+ *
+ *  @return Return the scaled image
+ */
+- (UIImage *)imageByScalingProportionallyToMaximumSize:(CGSize)targetSize;
+
 
 #pragma mark - Image Effect
 

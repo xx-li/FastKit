@@ -93,7 +93,7 @@
  @return Date modified by the number of desired seconds.
  */
 - (NSDate *)dateByAddingSeconds:(NSInteger)seconds;
-
+- (NSString *)descriptionTimeBetweenNow;
 
 /**
  *  Create an NSDate with other two NSDate objects.
@@ -124,8 +124,6 @@
  @return NSString representing the formatted date string.
  */
 - (NSString *)stringWithFormat:(NSString *)format;
-
-- (NSString *)descriptionTimeBetweenNow;
 
 /**
  Returns a date parsed from given string interpreted using the format.

@@ -27,6 +27,7 @@
 		C06C71101C081E54007B7CAC /* CGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C710E1C081E54007B7CAC /* CGUtilities.m */; };
 		C06C71401C0827F1007B7CAC /* UIButton+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C713F1C0827F1007B7CAC /* UIButton+FastKit.m */; };
 		C06C71431C082F2D007B7CAC /* UIDevice+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C71421C082F2D007B7CAC /* UIDevice+FastKit.m */; };
+		C07AC7C71C72BB6900032BB1 /* NSTimer+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C07AC7C61C72BB6900032BB1 /* NSTimer+FastKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		C06C71411C082F2D007B7CAC /* UIDevice+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FastKit.h"; sourceTree = "<group>"; };
 		C06C71421C082F2D007B7CAC /* UIDevice+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FastKit.m"; sourceTree = "<group>"; };
 		C06C714A1C0832D4007B7CAC /* FastKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastKitMacro.h; sourceTree = "<group>"; };
+		C07AC7C51C72BB6900032BB1 /* NSTimer+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FastKit.h"; sourceTree = "<group>"; };
+		C07AC7C61C72BB6900032BB1 /* NSTimer+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FastKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				C06C70FF1C07F42E007B7CAC /* NSArray+FastKit.m */,
 				C06C71011C07F442007B7CAC /* NSDate+FastKit.h */,
 				C06C71021C07F442007B7CAC /* NSDate+FastKit.m */,
+				C07AC7C51C72BB6900032BB1 /* NSTimer+FastKit.h */,
+				C07AC7C61C72BB6900032BB1 /* NSTimer+FastKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				C06C71061C07F479007B7CAC /* UILabel+FastKit.m in Sources */,
 				C06C71001C07F42E007B7CAC /* NSArray+FastKit.m in Sources */,
 				C066EBAE1C05B423002390E6 /* CALayer+FastKit.m in Sources */,
+				C07AC7C71C72BB6900032BB1 /* NSTimer+FastKit.m in Sources */,
 				C06C71101C081E54007B7CAC /* CGUtilities.m in Sources */,
 				C06C70FA1C07F40B007B7CAC /* NSString+FastKit.m in Sources */,
 				C06C71431C082F2D007B7CAC /* UIDevice+FastKit.m in Sources */,

@@ -73,7 +73,8 @@ NSString * const kBlockKey = @"block";
                                         repeats:repeats];
 }
 
-+ (void)fk_timerBlockInvoke:(NSDictionary*)userInfo {
++ (void)fk_timerBlockInvoke:(NSTimer*)timer {
+    NSDictionary * userInfo = timer.userInfo;
     FKTimerHandler block = [userInfo objectForKey:kBlockKey];
     id info = [userInfo objectForKey:kUserInfoKey];
     if (block) {

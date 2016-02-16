@@ -76,7 +76,6 @@ NSString * const kBlockKey = @"block";
 + (void)fk_timerBlockInvoke:(NSDictionary*)userInfo {
     FKTimerHandler block = [userInfo objectForKey:kBlockKey];
     id info = [userInfo objectForKey:kUserInfoKey];
-    // or `!block ?: block();` @sunnyxx
     if (block) {
         block(info);
     }

@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "NSTimer+FastKit.h"
-#import "TestTimer.h"
 
 @interface ViewController ()
 
@@ -26,7 +25,11 @@
         NSLog(@"timer1");
     } userInfo:nil repeats:YES];
     
-    self.timer2 = [NSTimer fk_scheduledTimerWithTimeInterval:1 target:self selector:@selector(test) userInfo:nil repeats:YES];
+    self.timer2 = [NSTimer fk_scheduledTimerWithTimeInterval:1 target:self selector:@selector(test:) userInfo:nil repeats:YES];
+    
+    [NSTimer fk_scheduledTimerWithTimeInterval:1 block:^(id userInfo) {
+        
+    } userInfo:nil repeats:YES];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.timer1 invalidate];
@@ -41,10 +44,16 @@
         NSLog(@"%@ %@", wself.timer1 , wself.timer2);
     });
     
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(test1:) userInfo:@(1) repeats:YES];
+    
 }
 
-- (void)test {
-    NSLog(@"timer2");
+- (void)test:(id)w {
+    NSLog(@"timer2 %@", w);
+}
+
+- (void)test1:(id)w {
+    NSLog(@"%@", w);
 }
 
 @end

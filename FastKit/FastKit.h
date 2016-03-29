@@ -27,6 +27,7 @@
 #import "UILabel+FastKit.h"
 #import "UIImage+FastKit.h"
 #import "UIColor+FastKit.h"
+#import "UIControl+FastKit.h"
 #import "UIButton+FastKit.h"
 #import "UIDevice+FastKit.h"
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C01B79181CAA632C003B92C2 /* TestTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C01B79171CAA632C003B92C2 /* TestTimer.m */; };
 		C01B791B1CAA6583003B92C2 /* UIControl+FastKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C01B791A1CAA6583003B92C2 /* UIControl+FastKit.m */; };
 		C066EB731C05948E002390E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C066EB721C05948E002390E6 /* main.m */; };
 		C066EB761C05948E002390E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C066EB751C05948E002390E6 /* AppDelegate.m */; };
@@ -33,8 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C01B79161CAA632C003B92C2 /* TestTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTimer.h; sourceTree = "<group>"; };
-		C01B79171CAA632C003B92C2 /* TestTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTimer.m; sourceTree = "<group>"; };
 		C01B79191CAA6583003B92C2 /* UIControl+FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+FastKit.h"; sourceTree = "<group>"; };
 		C01B791A1CAA6583003B92C2 /* UIControl+FastKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FastKit.m"; sourceTree = "<group>"; };
 		C066EB6E1C05948E002390E6 /* FastKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +113,6 @@
 				C066EB751C05948E002390E6 /* AppDelegate.m */,
 				C066EB771C05948E002390E6 /* ViewController.h */,
 				C066EB781C05948E002390E6 /* ViewController.m */,
-				C01B79161CAA632C003B92C2 /* TestTimer.h */,
-				C01B79171CAA632C003B92C2 /* TestTimer.m */,
 				C066EB7A1C05948E002390E6 /* Main.storyboard */,
 				C066EB7D1C05948E002390E6 /* Assets.xcassets */,
 				C066EB7F1C05948E002390E6 /* LaunchScreen.storyboard */,
@@ -272,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06C710C1C07F499007B7CAC /* UIColor+FastKit.m in Sources */,
-				C01B79181CAA632C003B92C2 /* TestTimer.m in Sources */,
 				C066EBB01C05B423002390E6 /* UITextView+FastKit.m in Sources */,
 				C066EB791C05948E002390E6 /* ViewController.m in Sources */,
 				C066EB761C05948E002390E6 /* AppDelegate.m in Sources */,

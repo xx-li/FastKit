@@ -155,26 +155,6 @@
 }
 
 
-- (BOOL)isPassword {
-    NSString *regex = @"[a-zA-Z0-9]{6,20}+$";
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    return [predicate evaluateWithObject:self];
-}
-
-+ (BOOL)isPassword:(NSString *)pw {
-    return [pw isPassword];
-}
-
-
-- (BOOL)isAuthCode {
-    NSString *regex = @"[a-zA-Z0-9]{4,6}";
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
-    return [predicate evaluateWithObject:self];
-}
-
-+ (BOOL)isAuthCode:(NSString *)authCode {
-    return [authCode isAuthCode];
-}
 
 
 - (BOOL)isBankCardNo {

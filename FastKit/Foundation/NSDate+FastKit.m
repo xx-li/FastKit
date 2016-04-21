@@ -157,7 +157,7 @@
     NSInteger days = now.day - self.day ;
     
     if (days < 0) {
-        return [self stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
+        return [self stringWithFormat:@"yyyy-MM-dd HH:mm"];
     }
     
     NSString *des;

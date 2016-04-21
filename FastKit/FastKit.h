@@ -19,7 +19,6 @@
 #import "NSArray+FastKit.h"
 #import "NSDate+FastKit.h"
 #import "NSString+FastKit.h"
-#import "NSString+FastKit.h"
 
 #import "UIScrollView+FastKit.h"
 #import "UITextView+FastKit.h"
@@ -27,8 +26,9 @@
 #import "UILabel+FastKit.h"
 #import "UIImage+FastKit.h"
 #import "UIColor+FastKit.h"
-#import "UIControl+FastKit.h"
 #import "UIButton+FastKit.h"
 #import "UIDevice+FastKit.h"
+#import "UIControl+FastKit.h"
+#import "UITextView+FastKit.h"
 
 #endif /* FastKit_h */

@@ -96,14 +96,6 @@
 - (BOOL)isMobilePhone;
 + (BOOL)isMobilePhone:(NSString*)phone;
 
-/*! Check if self is an Password */
-- (BOOL)isPassword;
-+ (BOOL)isPassword:(NSString *)pw;
-
-/*! Check if self is an SMS Auth code */
-- (BOOL)isAuthCode;
-+ (BOOL)isAuthCode:(NSString *)authCode;
-
 /*! Check if self is an BankCard */
 - (BOOL)isBankCardNo;
 + (BOOL)isBankCardNo:(NSString *)carNo;

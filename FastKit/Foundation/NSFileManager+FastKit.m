@@ -21,7 +21,6 @@
 + (BOOL)saveArrayToPath:(FSDirectoryType)path withFilename:(NSString *)fileName array:(NSArray *)array
 {
     NSString *_path;
-    
     switch(path)
     {
         case FSDirectoryTypeMainBundle:

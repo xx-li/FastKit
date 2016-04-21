@@ -20,6 +20,8 @@ typedef NS_ENUM(NSInteger, LXButtonLayoutType)
     LXButtonLayoutTypeImageBottom         = 4         //图片在下边
 };
 
+
+
 @interface UIButton (FastKit)
 
 /**
@@ -39,5 +41,9 @@ typedef NS_ENUM(NSInteger, LXButtonLayoutType)
  *  @param subMargin  内部图片和文本之间的间距
  */
 - (void) layoutWithType:(LXButtonLayoutType)layoutType subMargin:(CGFloat)subMargin;
+
+
+
+
 
 @end

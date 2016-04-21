@@ -110,7 +110,7 @@
     CGFloat imageHeight = self.imageView.image.size.height;
     CGFloat imageWidth =self.imageView.image.size.width;
     
-    CGFloat maxLabelWidth = CGRectGetWidth(self.frame) - imageWidth - self.subMargin;
+    CGFloat maxLabelWidth = 999;
     CGSize maxSize = CGSizeMake(maxLabelWidth, self.titleLabel.font.lineHeight);
     
     CGSize labelSize = [self.titleLabel.text sizeForFont:self.titleLabel.font
@@ -160,5 +160,8 @@
     CGFloat imageViewY = CGRectGetMaxY(self.titleLabel.frame) + self.subMargin;
     self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageWidth, imageHeight);
 }
+
+
+
 
 @end

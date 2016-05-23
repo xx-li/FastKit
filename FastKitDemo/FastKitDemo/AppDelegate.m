@@ -20,6 +20,15 @@
     // Override point for customization after application launch.
     CGFloat test = DegreesToRadians(100.0);
     NSLog(@"%f", test);
+    
+    NSString * test1 = nil;
+    NSString * test2= @"";
+    id test3 = [NSNull null];
+    NSString * a = kCheckNil(test1);
+    NSString * b = kCheckNil(test2);
+    NSString * c = kCheckNil(test3);
+    NSLog(@"a:%@  b:%@  c:%@", a, b, c);
+    
     return YES;
 }
 

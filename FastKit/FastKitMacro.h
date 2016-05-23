@@ -57,4 +57,9 @@
 #define kScreenHeight FScreenSize().height
 #endif
 
+// change NSNull object to nil
+#ifndef kCheckNull
+#define kCheckNull(value) (([(value) isKindOfClass:[NSNull class]]) ? nil : (value))
+#endif
+
 #endif /* FastKitMacro_h */

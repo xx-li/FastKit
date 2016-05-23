@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <UIKit/UIKit.h>
-
 //UIButton重新布局的类型
 typedef NS_ENUM(NSInteger, LXButtonLayoutType)
 {
